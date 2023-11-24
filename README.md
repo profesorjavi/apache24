@@ -56,11 +56,6 @@
 27. [Introducción a HTTPS](curso/u27)
 28. [Obtener un certificado en CAcert](curso/u28)
 29. [Configuración de HTTPS](curso/u29)
-30. [Introducción al módulo mod_security2](curso/u30)
 31. [Consejos de seguridad](curso/u31) 
 
-### Otros temas
-
-32. [Configuración de un proxy inverso](curso/u32)
-33. [Analizador de logs: awstats](curso/u33)
 
