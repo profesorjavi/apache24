@@ -7,7 +7,7 @@ Agradecemos al autor, José Domingo Muñoz Rodríguez, su meritorio trabajo.
 
 ### Introducción a los servidores web
 
-1. [Protocolo HTTP](curso/u1) 
+1. [Protocolo HTTP](curso/u1/http.md) 
 2. [Introducción al servidor web Apache 2.4](curso/u2)
 3. [Instalación del servidor web Apache 2.4](curso/u3)
 4. [Estructura de los ficheros de configuración](curso/u4)
