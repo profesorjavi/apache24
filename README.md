@@ -1,8 +1,9 @@
 # Curso: servidor web Apache 2.4
 
-## Unidades
+## Presentación
+Este curso es una adaptación del curso [curso_apache24](https://github.com/josedom24/curso_apache24) 
+Agradecemos al autor, José Domingo Muñoz Rodríguez, su meritorio trabajo. 
 
-0. [Introducción al curso](curso/u0/u0.pdf)
 
 ### Introducción a los servidores web
 
