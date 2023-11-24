@@ -2,10 +2,11 @@
 
 ## Presentación
 Este curso es una adaptación del curso [curso_apache24](https://github.com/josedom24/curso_apache24) 
+
 Agradecemos al autor, José Domingo Muñoz Rodríguez, su meritorio trabajo. 
 
 
-### Introducción a los servidores web
+### Introducción a los servidores WEB
 
 1. [Protocolo HTTP](curso/u1/http.md) 
 2. [Introducción al servidor web Apache 2.4](curso/u2)
