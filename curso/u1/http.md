@@ -32,6 +32,10 @@ La comunicación a través de HTTP se fundamenta en el envío y recepción de me
 1. Una línea vacía (espacio en blanco)
 1. Opcionalmente, el cuerpo el mensaje
 
+El contenido del mensaje según sea la petición o la respuesta lo podemos ver en el siguiente esquema:
+
+![dia1](img/dia1.png)
+
 ### HTTP Request
 
 ![Alt text](img/httpRequest.png)
@@ -112,7 +116,14 @@ El usuario tiene un formulario y cuando pulsa el botón enviar, se envía una so
 ### Códigos de estado de HTTP Response
 * [https://developer.mozilla.org/es/docs/Web/HTTP/Status](https://developer.mozilla.org/es/docs/Web/HTTP/Status)
 
+## Otras características
 
+* **Cookies**: Las cookies son información que el navegador guarda en memoria o en el disco duro dentro de ficheros de texto, a solicitud del servidor.
+* **Sesiones**: HTTP es un protocolo sin manejo de estados. Las sesiones nos permiten definir estados, para ello el servidor almacenará la información necesaria para llevar el seguimiento de la sesión.
+* **Autentificación**: A veces, debido a cuestiones de personalización o a políticas de restricción, las aplicaciones Web deben conocer y verificar la identidad del usuario, mediante nombre de usuario y contraseña.
+* **Conexiones persistentes**: Permiten que varias peticiones y respuestas sean transferidas usando la misma conexión TCP.
+
+  
 ## SSL
 
 **SSL** es un protocolo que proporciona privacidad e integridad entre dos aplicaciones de comunicaciones utilizando HTTP. El Protocolo de transferencia de hipertexto (HTTP) para World Wide Web utiliza SSL para que las comunicaciones sean seguras. Una visión general simplificada de cómo se procesa el protocolo de enlace SSL es la siguiente: 
