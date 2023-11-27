@@ -1,9 +1,11 @@
 # Curso: servidor WEB Apache 2.4
 
 ## Presentación
-Este curso es una adaptación del curso [curso_apache24](https://github.com/josedom24/curso_apache24) 
+Este curso es un fork del curso [curso_apache24](https://github.com/josedom24/curso_apache24) 
 
 Agradecemos al autor, José Domingo Muñoz Rodríguez, su meritorio trabajo. 
+
+El contenido está adaptado para el curso 23_24 en el IES la sénia, Paiporta. Por lo tanto si buscas información mas ampliada te recomiendo que consultes el fork original.
 
 
 ### Introducción a los servidores WEB
