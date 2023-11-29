@@ -32,9 +32,9 @@ Por defecto los errores de nuestro sitio virtual se guardan en `/var/log/apache2
 Cambia el contenido del fichero `index.html` (o crea un nuevo fichero `html`) del directorio `/var/www/html` y comprueba, accediendo por el navegador, los cambios realizados.
 
 ## Ejercicio 2 (memoria)
-* Paso 1. Crear una página WEB que simule una empresa con 2 imagenes que estarán en el directo /var/www/html/img/ la página se llamará en /var/www/html/senia.html
-* Paso 2. Copia el archivo de configuración base 000-default.con y llamarlo senia.conf
-* Paso 3. Habilitar vuestro sitio WEB y deshabilitar el sitio por defecto.
+* Paso 1. Crear una página WEB que simule una empresa con 2 imagenes que estarán en el directo /var/www/html/img/ la página se llamará  /var/www/html/senia.html
+* Paso 2. Copia el archivo de configuración base 000-default.conf y llamarlo senia.conf
+* Paso 3. Habilitar vuestro sitio WEB y deshabilitar el sitio por defecto. Utiliza para ello los comandos `a2ensite` y `a2dissite`.
 * Paso 4. Reiniciar y probar. http://ip/senia.html
 * Paso 5. Estudia la directiva DirectoryIndex y modifica tu configuración para poder acceder sin indicar la página. Probar con http://ip/
 * Paso 6. Describe que ves en los archivos `/var/log/apache2/error.log` y  `/var/log/apache2/access.log` 
