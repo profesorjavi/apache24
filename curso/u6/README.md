@@ -29,7 +29,6 @@ Por lo tanto podemos acceder desde un navegador a la ip de nuestro servidor (tam
 Por defecto los errores de nuestro sitio virtual se guardan en `/var/log/apache2/error.log` y los accesos a nuestro servidor se guardan en `/var/log/apache2/access.log`.
 
 ## Ejercicio 1
-
 Cambia el contenido del fichero `index.html` (o crea un nuevo fichero `html`) del directorio `/var/www/html` y comprueba, accediendo por el navegador, los cambios realizados.
 
 ## Ejercicio 2 (memoria)
@@ -38,3 +37,4 @@ Cambia el contenido del fichero `index.html` (o crea un nuevo fichero `html`) de
 * Paso 3. Habilitar vuestro sitio WEB y deshabilitar el sitio por defecto.
 * Paso 4. Reiniciar y probar. http://ip/senia.html
 * Paso 5. Estudia la directiva DirectoryIndex y modifica tu configuración para poder acceder sin indicar la página. Probar con http://ip/
+* Paso 6. Describe que ves en los archivos `/var/log/apache2/error.log` y  `/var/log/apache2/access.log` 
