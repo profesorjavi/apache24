@@ -33,8 +33,8 @@ Por defecto los errores de nuestro sitio virtual se guardan en `/var/log/apache2
 Cambia el contenido del fichero `index.html` (o crea un nuevo fichero `html`) del directorio `/var/www/html` y comprueba, accediendo por el navegador, los cambios realizados.
 
 ## Ejercicio 2
-Paso 1. Crear una página WEB que simule una empresa con 2 imagenes que estarán en el directo /var/www/html/img/ la página estará en /var/www/html/senia.html
+* Paso 1. Crear una página WEB que simule una empresa con 2 imagenes que estarán en el directo /var/www/html/img/ la página estará en /var/www/html/senia.html
 
-Paso 2. Copiae el archivo de configuración base y llamarlo senia.conf
-Paso 3. Habilitar vuestro sitio WEB y deshabilitar el sitio por defecto.
-Paso 4. Reiniciar y probar.
+* Paso 2. Copiae el archivo de configuración base y llamarlo senia.conf
+* Paso 3. Habilitar vuestro sitio WEB y deshabilitar el sitio por defecto.
+* Paso 4. Reiniciar y probar.
