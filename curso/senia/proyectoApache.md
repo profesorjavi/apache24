@@ -12,9 +12,11 @@ Trabajaremos en una máquina ubuntu server con IP estática.
 
 ## Virtual hosting en Apache 2.4
 Crear dos nuevos sitio web, el primero, www.blogseniaTIC.com y el segungo www.intranetseniatic.com. Además de estos ya creamos en /var/www/html el sitio WEB que ahora se corresponderá con www.seniaTIC.com
-* Paso 1. Crear un nuevo directorio en /var/www/blogseniaTIC
-* Paso 2. Seguir los pasos para crear el sitio WEB www.blogseniaTIC.com configurándolo para acceder por nombre
-* Paso 3. Probar `curl www.blogseniaTIC.com` y `curl www.seniaTIC,com`  
-* Paso 4. Crear un nuevo directorio en /var/www/intranetseniaTIC
-* Paso 5. Seguir los pasos para crear el sitio WEB www.intranetseniaTIC.com configurándolo para acceder por nombre pero en el puerto 8080
-* Paso 6. Probar `curl www.intranetseniaTIC.com:8080`
+* Paso 1. Modificar el sitio de senia.conf para que atienda al nombre www.seniaTIC.com
+* Paso 2. Probar `curl www.seniaTIC,com` 
+* Paso 3. Crear un nuevo directorio en /var/www/blogseniaTIC
+* Paso 4. Seguir los pasos para crear el sitio WEB www.blogseniaTIC.com configurándolo para acceder por nombre
+* Paso 5. Probar `curl www.blogseniaTIC.com`
+* Paso 6. Crear un nuevo directorio en /var/www/intranetseniaTIC
+* Paso 7. Seguir los pasos para crear el sitio WEB www.intranetseniaTIC.com configurándolo para acceder por nombre pero en el puerto 8080
+* Paso 8. Probar `curl www.intranetseniaTIC.com:8080`
