@@ -62,4 +62,6 @@ El contenido está adaptado para el curso 23_24 en el IES la sénia en Paiporta.
 29. [Configuración de HTTPS](curso/u29)
 31. [Consejos de seguridad](curso/u31) 
 
+### TAREAS
 
+[Proyecto WEB Sénia](/curso/senia/proyectoApache.md)
