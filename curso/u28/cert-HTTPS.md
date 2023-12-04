@@ -1,24 +1,10 @@
-# Práctica 1.4
-
-Implantación de Aplicaciones Web
-
-José Juan Sánchez Hernández
-
-Curso 2023/2024
-
-------------------------------------------------------------------------
-
 # Índice
 
 -   <a
     href="#https.-creación-y-configuración-de-un-certificado-ssltls-autofirmado-en-apache"
     id="toc-https.-creación-y-configuración-de-un-certificado-ssltls-autofirmado-en-apache"><span
     class="toc-section-number">1</span> HTTPS. Creación y configuración de
-    un certificado SSL/TLS autofirmado en Apache</a>
-    -   <a href="#instalación-del-servidor-web-apache"
-        id="toc-instalación-del-servidor-web-apache"><span
-        class="toc-section-number">1.1</span> Instalación del servidor web
-        Apache</a>
+    un certificado SSL/TLS autofirmado en Apache</a
     -   <a href="#creación-del-certificado-autofirmado"
         id="toc-creación-del-certificado-autofirmado"><span
         class="toc-section-number">1.2</span> Creación del certificado
@@ -84,14 +70,6 @@ públicos, por lo tanto, esta práctica se utiliza con fines educativos
 para conocer con detalle cómo funciona el proceso de creación y
 configuración de un certificado autofirmado.
 
-## <span class="header-section-number">1.1</span> Instalación del servidor web Apache
-
-En primer lugar deberemos tener instado un [servidor web
-Apache](https://httpd.apache.org) en nuestra máquina. Si todavía no lo
-hemos instalado, podemos hacerlo con los siguientes comandos:
-
-    sudo apt update
-    sudo apt install apache2 -y
 
 ## <span class="header-section-number">1.2</span> Creación del certificado autofirmado
 
@@ -365,98 +343,6 @@ está abierto en las reglas del firewall para permitir el tráfico HTTPS.
 Accede desde un navegador web al nombre de dominio que acabas de
 configurar. En nuesro caso será: `https://practica-https.local`.
 
-## <span class="header-section-number">1.7</span> Tareas a realizar
-
-En esta práctica tendremos que realizar la instalación de la [pila
-LAMP](https://josejuansanchez.org/iaw/practica-01-01/index.html) y la
-**configuración de un certificado SSL/TLS autofirmado** en el [servidor
-web Apache](https://httpd.apache.org), en una instancia EC2 de [Amazon
-Web Services (AWS)](https://aws.amazon.com/es/) con la última versión de
-[Ubuntu Server](https://ubuntu.com/server).
-
-A continuación se describen **muy brevemente** algunas de las tareas que
-tendrá que realizar.
-
-1.  Crea una instancia EC2 en AWS.
-
-2.  La **Amazon Machine Image (AMI)** que vamos a seleccionar para esta
-    práctica será una **Community AMI** con la última versión de
-    **Ubuntu Server**.
-
-3.  Cuando esté creando la instancia deberá configurar los puertos que
-    estarán abiertos para poder conectarnos por SSH y para poder acceder
-    por HTTP/HTTPS.
-
-    -   SSH (TCP)
-    -   HTTP (TCP)
-    -   HTTPS (TCP)
-
-4.  Crea un par de claves (pública y privada) para conectar por SSH con
-    la instancia. También puedes hacer uso de las claves que te
-    proporciona AWS Academy (*vockey.pem*).
-
-5.  Crea una dirección **IP elástica** y asígnala a la instancia EC2.
-
-6.  Una vez que haya iniciado su instancia deberá hacer uso de los
-    **scripts de bash** que diseñó en las prácticas anteriores para
-    automatizar la instalación de la pila LAMP.
-
-7.  Automatice la creación y configuración de un certificado autofirmado
-    SSL/TLS con la utilidad [`openssl`](https://www.openssl.org) para el
-    servidor web Apache.
-
-8.  Busque cuál es la dirección IP elástica de su instancia y compruebe
-    que puede acceder a ella desde una navegador web.
-
-## <span class="header-section-number">1.8</span> Entregables
-
-Deberá crear un repositorio en [GitHub](https://github.com) con el
-nombre de la práctica y añadir al profesor como colaborador.
-
-El repositorio debe tener el siguiente contenido:
-
--   Un **documento técnico** con la descripción de todos los pasos que
-    se han llevado a cabo.
--   Los **scripts de Bash** que se han utilizado para automatizar la
-    creación y configuración de un certificado SSL/TLS autofirmado en el
-    servidor web Apache.
-
-Además del contenido anterior puede ser necesario crear otros archivos
-de configuración. A continuación se muestra un ejemplo de cómo puede ser
-la estructura del repositorio:
-
-    .
-    ├── README.md
-    ├── conf
-    │   ├── 000-default.conf
-    │   └── default-ssl.conf
-    └── scripts
-        ├── .env
-        ├── install_lamp.sh
-        └── setup_selfsigned_certificate.sh
-
-### <span class="header-section-number">1.8.1</span> Documento técnico
-
-El documento técnico `README.md` tiene que estar escrito en
-[Markdown](https://es.wikipedia.org/wiki/Autoridad_de_certificaci%C3%B3n)
-y debe incluir **como mínimo** los siguientes contenidos:
-
--   Descripción del proceso de creación y configuración del certificado
-    SSL/TLS autofirmado en el servidor web Apache.
-
-### <span class="header-section-number">1.8.2</span> Scripts de Bash
-
-El directorio `scripts` debe incluir los siguientes archivos:
-
--   `.env`: Este archivo contiene todas las variables de configuración
-    que se utilizarán en los scripts de Bash.
-
--   `install_lamp.sh`: Script de Bash con la automatización del proceso
-    de instalación de la pila LAMP.
-
--   `setup_selfsigned_certificate.sh`: Script de Bash con la
-    automatización del proceso de creación y configuración de un
-    certificado SSL/TLS autofirmado en Apache.
 
 # <span class="header-section-number">2</span> Referencias
 
@@ -479,12 +365,14 @@ El directorio `scripts` debe incluir los siguientes archivos:
     Documentación oficial de Apache.
 
 # <span class="header-section-number">3</span> Licencia
+Este documento es una adaptación del documento origial que se indica a continuación con la identifiación de su autor
+
 
 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
 rel="license"><img
 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IB2cksfwAAAf5QTFRF////////////////8fHx7+/v6Ofn4+Pj4N/g39/f1tXV09bS0tXS0tXR0dTR0dTQ0NTQ0NPPz9PPztLOztHNzdHNzdHMz8/PzdDMzNDMzNDLzM/Ly8/Ly8/Ky87Kys3Jyc3Jyc3Iy8rLyMzIyMzHx8vHxsrGycjIxsrFxcnFyMfHxcnExMnExMjDw8jDxMfDw8fCwsfCwcXAwMXAwMW/wMS/v8S+v8O+vsO+vsK9vcK9vcK8v7+/vMG8vMG7vMC8u8C7u8C6ur+6ur+5ub65ub64uL23t7y2urm5tru1tbq0tLqztLmzs7iysrixtbW1srexsbewsLavsLWvr7Wur7SusLOvrrStrrOtr7KvrbOsrLKrr6+vq7GqrKurpqqmo6ijoqaho6Ghn6OenqCdn5+fnp2dn5aampiZlpmWlZmUmJaXk5iTkZSRkZORkY+Pj4+PiYyJjIqLjoeLh4aHhIaEhIWEgoWChIGCf4F+gICAfX98fH98fnt8en15eXx5eHV2dnN0dXJzcHJvcHBwbmxsaGVmY19hYGBgXV5dWldYUFFQUFBQQ0RDQEBAPj8+Pzs8Pzc5NTY1MjMxMjExMDAwMS0uLS0tKioqKSopKSkpKCkoKCgoKicnKCUmJCQkIx8gICAgHxscGxsbGRkZEBAQDg4ODQ4NDQwNAAAA4LK4NQAAAAN0Uk5TAAoO5yEBUwAAA+1JREFUeNq1lot3GkUUxlcviEDS7bYbKxC2oaWKSUmRpkkrSBvzIMGkJjGamoSobROtNqRVWyOppli0NBBSHxst+JiYUvr9l57dheVx8ESpncOeOfvbnW92vjv3DtyzeCqN44BIeCh02t/tcXdIDpvN4Tzs9nj9faHBcGR88u2Z2dm56H9vAIdIeCBwyudxOUWBb7FaW/YJYrvL4+sJDCjK0zOzc00pcwgPBE56j0kif3OzqCyiuHmDP+h0H/e/NhCOnJ+avjA7t55THuTWK+P2JOAwFDjpdduF2G7FoN1lwebq8gcGw2MTUzOf5IFsMpkF8le1UVf3JuAQOuV12/g0gEIqHgzGUwUA6RMvuI73hIZGxyc/fISMmYjInMEjddSlf0HA4bTvmF3RLcSNpLXFApA/YXP7+vqHIxM5pIgIUB4grwzKq2Rlo46YOjtNOgEHv0cS0oBsJr0ZZSAtOD3+wNDoGjKWsjBlsB6NruPnj4lWHj5OmHSSsdBFxhgbKRFFuPuoGANkI1Gt8vJBl7e3P/wAVTOakYtGc/iD3f8e8S+woBMzdbIf7iYYW9GIIuxx8rsoHKKaZixgl2/3+F8fQla5T0FdPmURjSL77W3GWMJkqRAyfMQ+J1pi2xpRhN1tN4E41bVF4Ibo9p0ZQJJUJzQvkopMkqgzASBhqRDDn+w3IhNjz6lEEe44sImCkSiYyWbjWneNiArYFA57e/sbCxOZEtuMbYzo5K1fgqrw87qwxBeVZQbVHZydV7uUsvjiPmdXz7lGVhCRYYksSrTul8nIxZeJFhirWOFoBa4RydgxB3cWZcjm+Z1F1YsWh8cf+lULnvbBeqhog21vI7Hw9V9lssTY6urv7NNK8OxWIKiMjGsCJbuDgNX2kj/0FTJUv90yRKbVh49XDNVkVVnAd4bKdttDePhBJUGS1Qny2UYdObKwYNFJjRXGQztxGbLSVawYfr/ZlC4FrxQ1PXhJFHmpq+fc8Jsf5AA5lZQrJedSfk+ibrc0CqRvt/ms2tEONoUOb+8b4bHJd75pqmy622KqF40S5NUzg6PjUzNNHCLg8Iqa0uZ/SunI+WaFu4+KlxsVoZjo6u7rD49NTF+Ya0oYtyThHiBXlSGzWjalL5/omAZwx7G/utAb4wXgR95+C08qjDXb/nt1RxP/4hX9HS0/oF0a0S4i1L1EtcJYcwiXqw/TmGC/UjWm9KMqldJ9zVQ1QBPGHUnkY+Xjf5kXpWofymWzeiqqmag8F1G9MH56z9l2gG+1Wlt5QWx/d6tmTJ0RZRuohtUtgdP51vWzksNud0hnr2/VxqHRF9d7XI5DA+H/+1/hM09J92+7pmyRGJsTpgAAAABJRU5ErkJggg=="
 style="border-width:0" alt="Licencia de Creative Commons" /></a>  
-Esta página forma parte del curso [Implantación de Aplicaciones
+La obra original forma parte del curso [Implantación de Aplicaciones
 Web](https://josejuansanchez.org/iaw) de [José Juan Sánchez
 Hernández](https://josejuansanchez.org) y su contenido se distribuye
 bajo una <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"

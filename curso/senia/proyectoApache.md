@@ -20,3 +20,10 @@ Crear dos nuevos sitio web, el primero, www.blogseniaTIC.com y el segungo www.in
 * Paso 6. Crear un nuevo directorio en /var/www/intranetseniaTIC
 * Paso 7. Seguir los pasos para crear el sitio WEB www.intranetseniaTIC.com configurándolo para acceder por nombre pero en el puerto 8080
 * Paso 8. Probar `curl www.intranetseniaTIC.com:8080`
+
+## Mapeo de URL
+* Paso 1. Crear el direcotrio /var/www/blogseniaTIC/docs y añadirle un par de archivos.
+* Paso 2. Configurar el sitio web para que cuando se acceda http://www.blogseniaTIC.com/docs se liste los archivos del directorio
+* Paso 3. Añadir una redirección en la página oficial del IES desde la página de senia.html. Se accedera con www.seniaTIC.com/oficial
+* Paso 4. Crear una página de error 404 personalizada para el sitio www.seniaTIC.com
+* 

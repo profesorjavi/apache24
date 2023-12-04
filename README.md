@@ -58,8 +58,10 @@ El contenido está adaptado para el curso 23_24 en el IES la sénia en Paiporta.
 ### Seguridad
 
 27. [Introducción a HTTPS](curso/u27)
-    [Creación y configuración de un certificado SSL/TLS autofirmado en Apache](/curso/u28/cert-HTTPS.md)
-28. [Obtener un certificado en CAcert](curso/u28)
+28. Certificados
+    1.  [HTTPS autofirmado](/curso/u28/cert-HTTPS.md)
+    2.  [HTTPS con Let’s Encrypt y Certbot](curso/u28/cert-Lets_encript.md)
+    3.  [HTTPS con CAcert](curso/u28)
 29. [Configuración de HTTPS](curso/u29)
 30. [Consejos de seguridad](curso/u31) 
 
