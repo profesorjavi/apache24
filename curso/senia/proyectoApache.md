@@ -24,6 +24,11 @@ Crear dos nuevos sitio web, el primero, www.blogseniaTIC.com y el segungo www.in
 ## Mapeo de URL
 * Paso 1. Crear el direcotrio /var/www/blogseniaTIC/docs y añadirle un par de archivos.
 * Paso 2. Configurar el sitio web para que cuando se acceda http://www.blogseniaTIC.com/docs se liste los archivos del directorio
-* Paso 3. Añadir una redirección en la página oficial del IES desde la página de senia.html. Se accedera con www.seniaTIC.com/oficial
+* Paso 3. Añadir una redirección temporal a la página oficial del IES donde simularemos que se ha movido temporalmente un recurso oficial desde la página de senia.html. Se accedera con www.seniaTIC.com/oficial y el servidor devloverá una respuesta con codigo 302
 * Paso 4. Crear una página de error 404 personalizada para el sitio www.seniaTIC.com
+  
+
+## Control de acceso, autentificación y autorización
+* Paso 1. Crear un directorio admin en `/var/www/html/admin` y añadir un par de archivos
+* Paso 2. Configuramos el servidor para que solo el usuario mortadelo y filemon puedan acceder a estos recursos. Utilizar seguridad Basic.
 * 
