@@ -31,5 +31,5 @@ Crear dos nuevos sitio web, el primero, www.blogseniaTIC.com y el segungo www.in
 ## Control de acceso, autentificación y autorización
 * Paso 1. Crear un directorio admin en `/var/www/html/admin` y añadir un par de archivos
 * Paso 2. Configuramos el servidor para que solo el usuario mortadelo y filemon puedan acceder a estos recursos. Utilizar seguridad Basic.
-  
+* Paso 3. Vamos a crear un directorio llamado `/var/www/html/root` que solo pueda acceder el usuario admin_root con la ip del propio servidor. Utilizando seguridad Digest y la configuración realizada en un fichero .htaccess.  
   
