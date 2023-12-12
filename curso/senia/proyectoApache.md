@@ -45,7 +45,7 @@ Crear dos nuevos sitio web, el primero, www.blogseniaTIC.com y el segungo www.in
     1. dixie/dixie
 * Paso 5. Configura el servidor apache2 con el modulo user_dir
 * Paso 6. Validado con los usuarios pixie y dixie crea en sus home el directorio utilizado por defecto public_html y dentro crea una página WEB
-* Paso 7. Configura los permisos adecuados de `/home`, `home/pixie` y `home/dixie`
+* Paso 7. Configura los permisos adecuados de `/home`, `home/pixie` y `home/dixie` para que se accesibles
 * Paso 8. Prueba el funcionamiento
     1. http://www.seniaTIC.com/~pixie
     1. http://www.seniaTIC.com/~dixie
