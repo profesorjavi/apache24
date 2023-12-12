@@ -32,4 +32,20 @@ Crear dos nuevos sitio web, el primero, www.blogseniaTIC.com y el segungo www.in
 * Paso 1. Crear un directorio admin en `/var/www/html/admin` y añadir un par de archivos
 * Paso 2. Configuramos el servidor para que solo el usuario mortadelo y filemon puedan acceder a estos recursos. Utilizar **seguridad Basic**. Probar **desde el navegador** con http://www.seniaTIC.com/admin o con http://IP_serverApache/admin
 * Paso 3. Vamos a crear un directorio llamado `/var/www/html/root` que solo pueda acceder el usuario admin_root con la ip del equipo anfitrión(donde utilizamos el navegador). Utilizando **seguridad Digest** y la configuración realizada en un fichero .htaccess. Probar **desde el navegador** con  http://www.seniaTIC.com/root o con http://IP_serverApache/root/
-  
+
+## Módulos en Apache
+**Configura apache para mostrar aplicaciones con el lenguaje php**. 
+* Paso 1. Instala la última versión (2023-->8.1)
+* Paso 2. Copia el siguiente script operacion.php en la raíz del sito www.seniaTIC.com
+* Paso 3. Prueba el funcionamiento. http://www.seniaTIC.com/operacion.php?op=suma&op1=23&op2=6
+------
+**Configura el modulo de directorio de usuarios**
+* Paso 4. Añade dos usuarios al servidor
+    1. pixie/pixie
+    1. dixie/dixie
+* Paso 5. Configura el servidor apache2 con el modulo user_dir
+* Paso 6. Validado con los usuarios pixie y dixie crea en sus home el directorio utilizado por defecto public_html y dentro crea una página WEB
+* Paso 7. Configura los permisos adecuados de `/home`, `home/pixie` y `home/dixie`
+* Paso 8. Prueba el funcionamiento
+    1. http://www.seniaTIC.com/~pixie
+    1. http://www.seniaTIC.com/~dixie
