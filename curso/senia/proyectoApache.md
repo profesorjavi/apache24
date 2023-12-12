@@ -37,9 +37,8 @@ Crear dos nuevos sitio web, el primero, www.blogseniaTIC.com y el segungo www.in
 **Configura apache para mostrar aplicaciones con el lenguaje php**. 
 * Paso 1. Instala la última versión (2023-->8.1)
 * Paso 2. Copia el siguiente script operacion.php en la raíz del sito www.seniaTIC.com
-* Paso 3. Prueba el funcionamiento. http://www.seniaTIC.com/operacion.php?op=suma&op1=23&op2=6
+* Paso 3. Prueba el funcionamiento. "http://www.seniaTIC.com/operacion.php?op=suma&op1=23&op2=6"
 
-----
 **Configura el modulo de directorio de usuarios**
 * Paso 4. Añade dos usuarios al servidor
     1. pixie/pixie
