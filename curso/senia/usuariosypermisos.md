@@ -47,6 +47,7 @@ Y realizar esta acción para los distintos sitios web que se creen.
 
     drwxr-xr-x
 
+NOTA:
 En la distribución de jammy el **directorio de los usuarios** viene sin permisos para otros usuarios.
 
     drwxr-x--- 5 javier javier 4096 Nov 27 10:49 javier
