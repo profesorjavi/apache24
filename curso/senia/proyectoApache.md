@@ -56,3 +56,12 @@ sudo chmod 755 /home/dixie
 * Paso 8. Prueba el funcionamiento
     1. http://www.seniaTIC.com/~pixie
     2. http://www.seniaTIC.com/~dixie
+
+## HTTPS
+* Paso 1. Creación del certificado autofirmado
+* Paso 2. Configuración de un nuevo VirtualHost (senia_ssl.conf) con SSL/TSL. (utilizar el sitio por defecto como plantilla)
+* Paso 3. Habilitar el módulo SSL en Apache.
+* Paso 4. Probar https://www.seniatic.com
+* Paso 5. Configuramos el virtual host de HTTP para que redirija todo el tráfico a HTTPS de http://www.seniaTIC.com a https://www.seniaTIC.com
+* Paso 6. Habilitar el modo de reescritura
+* Paso 7. Probar http://www.seniatic.com
