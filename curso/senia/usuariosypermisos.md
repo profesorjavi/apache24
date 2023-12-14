@@ -42,10 +42,19 @@ Podemos cambiar el dueño del directorio y el grupo, al usuario por defecto de a
 
 Y realizar esta acción para los distintos sitios web que se creen.
 
-## Configuración de las carpetas
-**Las carpeta** de los sitios WEB deberían tener el permiso 755 (nunca el permiso 777). Con el permiso 755, el propietario tiene todos los privilegios (lectura, escritura y ejecución), el grupo y el resto de usuarios solo tendrán permisos de lectura y de ejecución en la misma carpeta.
+## Configuración de los directorios.
+**Los directorios** de los sitios WEB deberían tener el permiso 755 (nunca el permiso 777). Con el permiso 755, el propietario tiene todos los privilegios (lectura, escritura y ejecución), el grupo y el resto de usuarios solo tendrán permisos de lectura y de ejecución en la misma carpeta.
 
     drwxr-xr-x
+
+En la distribución de jammy el **directorio de los usuarios** viene sin permisos para otros usuarios.
+
+    drwxr-x--- 5 javier javier 4096 Nov 27 10:49 javier
+
+Si queremos utizar el módulo de directorios de usuarios de apache para que pueda publicar archivos, o publicar directamente en ellos, deberemos de darle permisos de lectura y ejecución para poder entrar en el directorio.
+
+    chmod 755 /home/javier
+
 
 **Los ficheros** de los sitios WEB debería de tener los permisos 644
 
