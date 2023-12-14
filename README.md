@@ -12,10 +12,11 @@ El contenido está adaptado para el curso 23_24 en el IES la sénia en Paiporta.
 
 1. [Protocolo HTTP](curso/u1/http.md) 
 2. [Introducción al servidor web Apache 2.4](curso/u2)
-3. [Instalación del servidor web Apache 2.4](curso/u3)
-4. [Estructura de los ficheros de configuración](curso/u4)
-5. [Empezamos estudiando algunas directivas](curso/u5)
-6. [Probando nuestro servidor web](curso/u6)
+3. [Usuarios y permisos](./curso/senia/usuariosypermisos.md)
+4. [Instalación del servidor web Apache 2.4](curso/u3)
+5. [Estructura de los ficheros de configuración](curso/u4)
+6. [Empezamos estudiando algunas directivas](curso/u5)
+7. [Probando nuestro servidor web](curso/u6)
 
 ### Virtual Hosting en Apache 2.4
 
