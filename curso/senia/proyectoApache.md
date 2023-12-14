@@ -2,7 +2,7 @@
 ## Entorno
 Trabajaremos en una máquina ubuntu server con IP estática.
 ## Explicación de los usuarios y permisos.
-Si necesitas aclaración echale un vistazo a [esto](./usuariosypermisos.md).
+Si necesitas aclaración echale un vistazo a ["esto"](./usuariosypermisos.md).
 
 ## Introducción a los servidores WEB
 * Paso 1. Crear una página WEB que simule una empresa con 2 imagenes que estarán en el directo /var/www/html/img/ la página se llamará  /var/www/html/senia.html (más adelante accederemos con www.seniatic.com)
