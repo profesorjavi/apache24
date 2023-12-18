@@ -67,3 +67,11 @@ sudo chmod 755 /home/dixie
 * Paso 5. Configuramos el virtual host de HTTP para que redirija todo el tráfico a HTTPS de http://www.seniaTIC.com a https://www.seniaTIC.com
 * Paso 6. Habilitar el modo de reescritura
 * Paso 7. Probar http://www.seniatic.com
+
+## Acoplar el servidor Apache al proyecto GNS3
+* Paso 1. Configurar la interfaz de red con DHCP de la MV para que reciba por DCHP la IP estática correspondiente.
+* Paso 2. Añadir la máquina virtual al proyecto GNS3 del curso en la DMZ
+* Paso 3. Probar con un WEBTerminal en la DMZ que funciona correctamente. (También podrías probarlo con curl)
+* Paso 4. Configurar el DNS server de la LAN para resolver los nombres de la zona seniaTIC.com. Solo es necesario los de esta zona. Como ampliación puedes crear nuevas zonas para reslover el resto. Si no lo haces puedes añadirlos en el /etc/hosts de los clientes(VPCs)
+* Paso 5. Modificar mikrotik para permitir el acceso desde la LAN al servidor WEB de la DMZ y desde Internet al servidor WEB de la DMZ
+* Paso 6. Probar el funcionamiento situando WebTerminales en la red INET y la red LAN y accediendo al servidor.
