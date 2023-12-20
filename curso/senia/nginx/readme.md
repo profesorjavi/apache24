@@ -1,4 +1,4 @@
-# Curso: servidor WEB Apache 2.4
+# Curso: servidor WEB NGINX
 
 ## Presentación
 [Presentación](u0/presentacion.md)
@@ -12,9 +12,9 @@
 
 ### Virtual Hosting en NGINX
 
-7. [Introducción a Virtual Hosting](curso/u7)
-8. [Configuración de Virtual Hosting](curso/u8)
-9. [Configuración de acceso a los servidores virtuales](curso/u9)
+1. [Introducción a Virtual Hosting](u4/VH.md)
+2. [Configuración de Virtual Hosting](curso/u8)
+3. [Configuración de acceso a los servidores virtuales](curso/u9)
 
 ### Mapeo de URL
 

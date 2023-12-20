@@ -157,8 +157,7 @@ La configuración, además, admite algunos añadidos interesantes:
     -   Estos ficheros se escriben directamente y no pasan por el gestor
         de registros (**systemd** o **rsyslog**, según el caso). Para
         propiciar que **nginx** use el gestor, vea más adelante
-        <a href="02.avanz/09.misc.html#nginx-systemd"
-        class="reference internal"><span class="std std-ref">cómo </a>.
+        cómo.
 
 -   **nginx** tiene unas páginas predefinidas para informar al cliente
     de los errores (**403**, **404**, **502**, etc.). Podemos, no
