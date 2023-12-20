@@ -37,9 +37,9 @@ ip firewall nat add chain=dstnat protocol=tcp dst-port=80 in-interface=INET acti
 Añadir reclas FILTER para redirigir las peticiones de la LAN a la DMZ
 ```mikrotik
 ip firewall filter add chain=forward dst-address=10.0.1.2 protocol=tcp dst-port=80 in-interface=LAN action=accept
-``
-```mikrotik
+```
 Regla para que un pc pueda acceder por ssh
+```mikrotik
     ip firewall filter add chain=forward src-address=192.168.10.9  protocol=tcp dst-port=22 in-interface=LAN out-interface=DMZ action=accept
 ```
 ## Regla para permitir paquetes de conexion y relacionados ----->>> no la ponemos.
