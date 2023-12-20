@@ -49,6 +49,6 @@ Regla para que un pc pueda acceder por ssh
 ip firewall filter add chain=forward out-interface=DMZ in-interface=LAN action=reject
 ```
 ## Bloquear el acceso de la DMZ a la LAN dejando que si puedan salir a internet
-```mikrotik
-ip firewall filter add chain=forward out-interface=LAN in-inte`face=DMZ action=reject
+```sh
+ip firewall filter add chain=forward out-interface=LAN in-interface=DMZ action=reject
 ```
