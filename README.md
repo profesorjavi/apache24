@@ -66,10 +66,7 @@ El contenido está adaptado para el curso 23_24 en el IES la sénia en Paiporta.
 29. [Configuración de HTTPS](curso/u29)
 30. [Consejos de seguridad](curso/u31) 
 
-## AWS
-1. [Crear un subdomnio para Ec2](/curso/aws/ddns-noip.md)
-1. [Lanzar una instancia con IP estática](/curso/aws/Amazon_EC2_Linux.pdf)
-1. [Configuración de Amazon Route 53 como servicio DNS](https://docs.aws.amazon.com/es_es/Route53/latest/DeveloperGuide/dns-configuring.html)
+
 
 ### TAREAS
 

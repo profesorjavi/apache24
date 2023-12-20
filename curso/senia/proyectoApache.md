@@ -1,6 +1,7 @@
 # Proyecto Apache
 ## Entorno
 Trabajaremos en una máquina ubuntu server con IP estática.
+La configuración del mikrotik de ejemplo puedes consultarla [aquí](./mikrotik/conf_mikrotik.md).
 ## Explicación de los usuarios y permisos.
 Si necesitas aclaración echale un vistazo a ["esto"](./usuariosypermisos.md).
 
