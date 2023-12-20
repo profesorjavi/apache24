@@ -70,4 +70,4 @@ El contenido está adaptado para el curso 23_24 en el IES la sénia en Paiporta.
 
 ### TAREAS
 
-[Proyecto WEB Sénia](/curso/senia/proyectoApache.md)
+[Proyecto WEB Sénia](curso/senia/proyectoApache.md)
