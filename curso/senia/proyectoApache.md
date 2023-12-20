@@ -76,3 +76,6 @@ sudo chmod 755 /home/dixie
 * Paso 4. Configurar el DNS server de la LAN para resolver los nombres de la zona seniaTIC.com. Solo es necesario los de esta zona. Como ampliación puedes crear nuevas zonas para reslover el resto. Si no lo haces puedes añadirlos en el /etc/hosts de los clientes(VPCs)
 * Paso 5. Modificar mikrotik para permitir el acceso desde la LAN al servidor WEB de la DMZ y desde Internet al servidor WEB de la DMZ
 * Paso 6. Probar el funcionamiento situando WebTerminales en la red INET y la red LAN y accediendo al servidor.
+
+
+Una vez Visto nos pasaremos al proyecto [NGINX](nginx/readme.md)
