@@ -28,7 +28,7 @@ Configuración del NAT para que LAN puedan salir por INET
 ip firewall nat add chain=srcnat src-address=0.0.0.0/0 dst-address=0.0.0.0/0 out-interface=INET action=masquerade disabled=no
 ```
 
-### Reglas para el Port Fordwardind
+### Reglas para el Port Fordwarding
 Anadir reglas NAT para la redirección de puertos 80 de INET a servidore WEB DMZ
 ```sh
 ip firewall nat add chain=dstnat protocol=tcp dst-port=80 in-interface=INET action=dst-nat to-addresses=10.0.1.2
@@ -42,13 +42,17 @@ Regla para que un pc pueda acceder por ssh
 ```sh
     ip firewall filter add chain=forward src-address=192.168.10.9  protocol=tcp dst-port=22 in-interface=LAN out-interface=DMZ action=accept
 ```
-## Regla para permitir paquetes de conexion y relacionados ----->>> no la ponemos.
 
-## Bloquear el resto de tráfico de la LAN a la DMZ
-```sh
-ip firewall filter add chain=forward out-interface=DMZ in-interface=LAN action=reject
-```
-## Bloquear el acceso de la DMZ a la LAN dejando que si puedan salir a internet
-```sh
-ip firewall filter add chain=forward out-interface=LAN in-interface=DMZ action=reject
-```
+<small>
+
+    ## Regla para permitir paquetes de conexion y relacionados ----->>> no la ponemos.
+
+    ## Bloquear el resto de tráfico de la LAN a la DMZ
+    ```sh
+    ip firewall filter add chain=forward out-interface=DMZ in-interface=LAN action=reject
+    ```
+    ## Bloquear el acceso de la DMZ a la LAN dejando que si puedan salir a internet
+    ```sh
+    ip firewall filter add chain=forward out-interface=LAN in-interface=DMZ action=reject
+    ```
+</small>
