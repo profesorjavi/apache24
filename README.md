@@ -1,7 +1,7 @@
 # Curso: servidor WEB Apache 2.4
 
 ## Presentación
-Este curso es un fork del curso [curso_apache24](https://github.com/josedom24/curso_apache24) 
+Este curso es un fork del curso [apache24](https://github.com/josedom24/apache24) 
 
 Agradecemos al autor, José Domingo Muñoz Rodríguez, su meritorio trabajo. 
 

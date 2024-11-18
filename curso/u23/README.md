@@ -12,7 +12,7 @@ Es mucho mejor escribirlas como:
 
 ## Ejemplo 1: Cambiar la extensión de los ficheros
 
-Si tenemos el siguiente fichero php [operacion.php](https://raw.githubusercontent.com/josedom24/curso_apache24/master/curso/u23/fich/operacion.php), podríamos usarlo de la siguiente manera:
+Si tenemos el siguiente fichero php [operacion.php](https://raw.githubusercontent.com/josedom24/apache24/master/curso/u23/fich/operacion.php), podríamos usarlo de la siguiente manera:
 
         http://www.pagina1.org/operacion.php?op=suma&op1=6&op2=8
 
