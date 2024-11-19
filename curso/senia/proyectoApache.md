@@ -10,7 +10,7 @@ La configuración del mikrotik de ejemplo puedes consultarla [aquí](./mikrotik/
 Si necesitas aclaración echale un vistazo a ["esto"](./usuariosypermisos.md).
 
 ## Introducción a los servidores WEB
-* Paso 1. Crear una página WEB que simule una empresa con 2 imagenes que estarán en el directo /var/www/html/img/ la página se llamará  /var/www/html/senia.html (más adelante accederemos con www.seniatic.com)
+* Paso 1. Crear una página WEB que simule una empresa con 2 imagenes que estarán en el directo /var/www/intro/img/ la página se llamará  /var/www/intro/senia.html (más adelante accederemos con www.seniatic.com)
 * Paso 2. Copia el archivo de configuración base 000-default.conf y llamarlo senia.conf
 * Paso 3. Habilitar vuestro sitio WEB y deshabilitar el sitio por defecto. Utiliza para ello los comandos `a2ensite` y `a2dissite`.
 * Paso 4. Reiniciar y probar. http://ip/senia.html
@@ -36,9 +36,9 @@ Crear dos nuevos sitio web, el primero, www.blogseniaTIC.com y el segungo www.in
   
 
 ## Control de acceso, autentificación y autorización
-* Paso 1. Crear un directorio admin en `/var/www/html/admin` y añadir un par de archivos
+* Paso 1. Crear un directorio admin en `/var/www/intro/admin` y añadir un par de archivos
 * Paso 2. Configuramos el servidor para que solo el usuario mortadelo y filemon puedan acceder a estos recursos. Utilizar **seguridad Basic**. Probar **desde el navegador** con http://www.seniaTIC.com/admin o con http://IP_serverApache/admin
-* Paso 3. Vamos a crear un directorio llamado `/var/www/html/root` que solo pueda acceder el usuario admin_root con la ip del equipo anfitrión(donde utilizamos el navegador). Utilizando **seguridad Digest** y la configuración realizada en un fichero .htaccess. Probar **desde el navegador** con  http://www.seniaTIC.com/root o con http://IP_serverApache/root/
+* Paso 3. Vamos a crear un directorio llamado `/var/www/intro/root` que solo pueda acceder el usuario admin_root con la ip del equipo anfitrión(donde utilizamos el navegador). Utilizando **seguridad Digest** y la configuración realizada en un fichero .htaccess. Probar **desde el navegador** con  http://www.seniaTIC.com/root o con http://IP_serverApache/root/
 
 ## Módulos en Apache
 **Configura apache para mostrar aplicaciones con el lenguaje php**. 
